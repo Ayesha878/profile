@@ -7,51 +7,81 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="D:\DEMOHTML\bootstrap_sample_files\bootstrap-4.0.0\dist\css\bootstrap.min.css">
 	<link rel="stylesheet" href="D:\DEMOHTML\fontawesome-free-5.12.0-web\css\all.min.css">
+	<script src="D:\DEMOHTML\jquery\jquery-3.4.1.js"></script>
 	<script src="D:\DEMOHTML\bootstrap_sample_files\bootstrap-4.0.0\dist\js\bootstrap.min.js"></script>
-    <script src="D:\DEMOHTML\jquery\jquery-3.4.1.js"></script>
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbarmenu">
 
-
-
-<!---------------START HOME------------------>
+<!---------------****START HOME****------------------>
 <div id="home">
 
     <!----start navigation------>
     <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
-    <a class="navbar-brand" href="#"><i class="fa fa-desktop" aria-hidden="true"></i>&nbsp;PROFILE</a>	
+    <a class="navbar-brand" href="#"><i class="fa fa-desktop" aria-hidden="true"></i>&nbsp;PROFILE</a>
+    <!-----if toggle button is not working add jquery library before bootstrap library----------->	
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarmenu">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarmenu">
+    <ul class="nav navbar-nav ml-auto">
+    	<li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
+    	<li class="nav-item"><a class="nav-link" href="#qualification">QUALIFICATION</a></li>
+    	<li class="nav-item"><a class="nav-link" href="#skill">SKILL</a></li>
+    	<li class="nav-item"><a class="nav-link" href="#project">PROJECT</a></li>
+    	<li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+    </ul>
+    </div>
     </nav>
     <!----end navigation-------->
        
     <!----start slider------>
+    <!--data-ride begin animating the carousel immediately when the page loads-->
+    <div id="slider" class="carousel slide" data-ride="carousel">
+    	<ul class="carousel-indicators">
+    		<li data-target="#slider" data-slide-to="0" class="active"></li>
+    		<li data-target="#slider" data-slide-to="1"></li>
+    		<li data-target="#slider" data-slide-to="2"></li>
+    	</ul>
+    	<div class="carousel-inner" role="listbox">
+
+    		<div class="carousel-item active" style="background-image: url('sllide3.jpg');">	
+    		<div class="carousel-caption">
+    		<h3>Ayesha Aqeel</h3>
+    		<h5>BS in software engineering, UBIT</h5>
+    		<h6>Highly motivated technology professional elevating career as a UI/UX developer</h6>	
+    		</div>	
+    		</div><!--carousel item1 ends--->
+
+    	</div><!--carousel inner end-->
+    </div><!--carousel end-->
     <!----end slider-------->
 
 </div>
-<!---------------END HOME-------------------->
+<!---------------****END HOME****-------------------->
 
-<!---------------START QUALIFICATION------------------>
+<!---------------****START QUALIFICATION****------------------>
 <div id="qualification"></div>
-<!---------------END QUALIFICATION-------------------->
+<!---------------****END QUALIFICATION****-------------------->
 
 
-<!---------------START SKILLS------------------>
+<!---------------****START SKILLS****------------------>
 <div id="skill"></div>
-<!---------------END SKILLS-------------------->
+<!---------------****END SKILLS****-------------------->
 
 
-<!---------------START PROJECT------------------>
+<!---------------****START PROJECT****------------------>
 <div id="project"></div>
-<!---------------END PROJECT-------------------->
+<!---------------****END PROJECT****-------------------->
 
 
-<!---------------START CONTACT------------------>
+<!---------------****START CONTACT****------------------>
 <div id="contact"></div>
-<!---------------END CONTACT-------------------->
+<!---------------****END CONTACT****-------------------->
 
 
-<!---------------START FOOTER------------------>
+<!---------------****START FOOTER****------------------>
 <div id="footer"></div>
-<!---------------END FOOTER-------------------->
+<!---------------****END FOOTER****-------------------->
 
 
 </body>
